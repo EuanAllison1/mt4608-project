@@ -56,11 +56,6 @@ round(100 * est[, "se"] / est[, "estimate"])      # relative SE: 11%
 N * sqrt((1 - n / N) * var(counts15) / n)         # expected SE, about 470
 unname(est["people", "se"] / pilot_est["se"])     # achieved / pilot SE = 0.28
 
-# ratio estimator check
-cv <- function(y) sd(y) / mean(y)
-c(rho = cor(main$people, main$cars), threshold = cv(main$cars) / (2 * cv(main$people)))
-
-
 # difference between each day
 days <- c("Mon", "Tue", "Wed", "Thu", "Fri")
 day  <- factor(main$day, levels = days)
