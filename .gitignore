@@ -1,13 +1,5 @@
-# R / RStudio
 .Rproj.user/
 .Rhistory
 .RData
-.Ruserdata
 Rplots.pdf
 
-# OS files
-.DS_Store
-Thumbs.db
-.Rproj.user
-.httr-oauth
-.quarto
